@@ -1,0 +1,9 @@
+<div *ngFor="let product of ListProduct" class="mb-3">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">{{ product.libelle }}</h5>
+      <p class="card-text">Prix unitaire : {{ product.prixunitaire }}</p>
+      <button class="btn btn-primary" (click)="calculateProducts(product.libelle)">Calculer</button>
+    </div>
+  </div>
+</div>
